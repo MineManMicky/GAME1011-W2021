@@ -35,33 +35,31 @@ struct Rectangle
 	int width, height;
 };
 
-int main()
-{
-	Rectangle* pRect = nullptr;
-	Person* pPerson = nullptr;
-
-	Rectangle rect;
-	pRect = &rect;
-
-	(*pRect).width = 10;
-	pRect->height = 20; // use this method(it's cleaner)
-
-	cout << "Area of the rectangle is: " << pRect->width * pRect->height << endl;
-
-	// Dynamically allocated object access through pointers
-	pRect = new Rectangle;
-	pRect->width = 6;
-	pRect->height= 5;
-	cout << "The area of the rectangle is " << pRect->width * pRect->height << endl;
-	delete pRect;
-	pRect = nullptr;
-
-	pPerson = new Person(" Micky Bannavong", 19);
-	cout << pPerson->getName() << " is " << pPerson->getAge() << " years old" << endl;
-	delete pPerson;
-	pPerson = nullptr;
-
-
-	return 0;
-
-}
+//int main()
+//{
+//	Rectangle* pRect = nullptr;
+//	Person* pPerson = nullptr;
+//
+//	Rectangle rect;
+//	pRect = &rect;
+//
+//	(*pRect).width = 10;
+//	pRect->height = 20; // use this method(it's cleaner)
+//
+//	cout << "Area of the rectangle is: " << pRect->width * pRect->height << endl;
+//
+//	// Dynamically allocated object access through pointers
+//	pRect = new Rectangle;
+//	pRect->width = 6;
+//	pRect->height= 5;
+//	cout << "The area of the rectangle is " << pRect->width * pRect->height << endl;
+//	delete pRect;
+//	pRect = nullptr;
+//
+//	pPerson = new Person("Micky Bannavong", 19);
+//	cout << pPerson->getName() << " is " << pPerson->getAge() << " years old" << endl;
+//	delete pPerson;
+//	pPerson = nullptr;
+//
+//	return 0;
+//}
